@@ -30,9 +30,9 @@ body{
   background: transparent;
   text-transform: capitalize;
   font-size: 0.9rem !important;
-  color: var(--mainDark);
+  color: var(--mainBlue);
   border-radius: 15px;
-  border: 0.1rem solid var(--mainDark) !important;
+  border: 0.1rem solid var(--mainBlue) !important;
   cursor: pointer;
 }
 
@@ -45,5 +45,5 @@ body{
 .cart-icon {
   cursor: pointer;
   font-size: 1.2rem;
-  color: var(--mainDiff);
+  color: var(--mainBlue);
 }

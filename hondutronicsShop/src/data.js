@@ -166,6 +166,105 @@ export const storeProducts = [
     inCart: false,
     count: 0,
     total: 0
+  },
+  {
+    id: 16,
+    title: "LightBulb A19",
+    img: "img/frankeverbulb.png",
+    price: 16,
+    company: "Frankever",
+    info: "Una muy versátil opción para diferentes ambientes y gustos. Reemplaza a un bombillo tradicional, diferentes tonos de amarillo, blanco, rojo, verde y azul. Escenas y programación de horarios, con control remoto y agenda de funcionamiento.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 17,
+    title: "SmartPlug PW801",
+    img: "img/frankeverplug.png",
+    price: 12,
+    company: "Frankever",
+    info: "Un amigable tomacorrientes inteligente que te permite crear horarios y manejar remotamente cualquier aparato de 110-240v. Se conecta en cualquier tomacorrientes tradicional, y permite manejar de forma efectiva los electrodomésticos para consumo energético.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 18,
+    title: "SmartPlug PW301U",
+    img: "img/frankeversmartplug.png",
+    price: 14,
+    company: "Frankever",
+    info: "Otra opción versátil para tomacorrientes inteligente, ésta con salida USB para cargar tu celular o Tablet, que te permite crear horarios y manejar remotamente cualquier aparato de 110-240v. Se conecta en cualquier tomacorrientes tradicional.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 19,
+    title: "Smart PowerStrip",
+    img: "img/frankeverpowerstrip.png",
+    price: 32,
+    company: "Frankever",
+    info: "Una poderosa opción para sustituir tu regleta tradicional y conectar varios aparatos en un solo lugar de carga. Múltiples conexiones 125v, con dos salidas USB para tus celulares y tabletas, todas controladas independientemente para tu comodidad.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 20,
+    title: "Smart WiFi Camera",
+    img: "img/frankevercam.png",
+    price: 16,
+    company: "Frankever",
+    info: "Una cámara inteligente para el monitoreo 24/7 de tu espacio (casa, apartamento u oficina). Puede ser accedida a través de tu celular. Con resolución de 1280x720 pixeles, con ranura para memoria SD para grabación de video.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 21,
+    title: "Smart Led Light Strip",
+    img: "img/frankeverlightstrip.png",
+    price: 26,
+    company: "Frankever",
+    info: "Una cinta de luces LED para la decoración e iluminación de cualquier espacio. Con luces de tonos en verde, rojo, azul y blanco, con programación de horarios y manejo remoto.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 22,
+    title: "Smart Led Light String",
+    img: "img/frankeverlightstring.png",
+    price: 16,
+    company: "Frankever",
+    info: "Una red de 12 bombillos LED ideal para decoración de exteriores y patios. Con luces en tonos de azul, verde y rojo.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 23,
+    title: "Smart IR Box",
+    img: "img/frankeverirbox.png",
+    price: 8,
+    company: "Frankever",
+    info: "Un controlador inteligente de aparatos infrarrojos compatible con televisores, aires acondicionados, equipos de sonidos y otros.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 24,
+    title: "Tile Mate",
+    img: "img/tilemate.png",
+    price: 23,
+    company: "Tile",
+    info: "Un buscador inteligente de objetos, apropiado para colocar en carteras, llaves, tablets, maletines y muchos más. Con tecnología Bluetooth, te permite localizar con sonido si el objeto está en rango, y si no, a través de GPS puedes ver su ubicación en cualquier lado del mundo",
+    inCart: false,
+    count: 0,
+    total: 0
   }
 ];
 
