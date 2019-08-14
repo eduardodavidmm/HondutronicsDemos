@@ -9,8 +9,9 @@ import './checkout.styles.scss';
 
 const CheckoutPage = ({ cartItems, total }) => (
   <div className='checkout-page'>
+    <h2>Carrito de Compras</h2>
     <div className='checkout-header'>
-      <div className='header-block'>
+      <div className='header-block product'>
         <span>Producto</span>
       </div>
       <div className='header-block'>
