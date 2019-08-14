@@ -12,7 +12,6 @@ const CollectionPreview = ({ title, items }) => (
                 ))
             }
         </div>
-        <hr className="hr"/>
     </div>
 )
 
