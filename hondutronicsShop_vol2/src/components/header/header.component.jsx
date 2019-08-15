@@ -1,49 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../assets/logo.svg'
-import { auth } from '../../firebase/firebase.utils';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-import CartIcon from '../cart-icon/cart-icon.component';
-import CartDropdown from '../cart-dropdown/cart-dropdown.component';
-import { selectCartHidden } from '../../redux/cart/cart.selectors';
-import { selectCurrentUser } from '../../redux/user/user.selectors';
+import CustomButton from '../custom-button/custom-button-component';
+import { ReactComponent as Image } from '../../assets/casa2.svg';
 import './header.styles.scss';
 
-const Header = ({ currentUser, hidden }) => (
-    <div className="container">
-        <nav className="navbar navbar-expand-sm bg-white navbar-light px-sm-5 fixed-top">
-            <Link to="/">
-                <Logo className="navbar-brand logo" />
-            </Link>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav ml-auto options">
-                    <li className="nav-item option">
-                        <Link to="/shop">Tienda</Link>
-                    </li>
-                    <li className="nav-item option">
-                        {currentUser ? (<div className="option" onClick={() => auth.signOut()}>Cerrar Sesión</div>) : (<Link className="option" to="/signin">Iniciar Sesión</Link>)}
-                    </li>
-                    <li className="nav-item">
-                        <CartIcon class="icon" />
-                    </li>
-                </ul>
+const Header = () => (
+    <header className="header fixed-top-added">
+        <div className="container">
+            <div className="row">
+                <div className="col-md-7">
+                    <div className="hero-content">
+                        <h1 className="title">La casa inteligente a tu alcance</h1>
+                        <p className="parragraph mt-3"> La automatización de tu espacio al alcance de tu mano. Ofrecemos paquetes de
+                          servicios personalizados y ajustados
+                          a tus gustos y necesidades.
+                        </p>
+                        <ul className="pair-btns-list">
+                            <CustomButton>Cotizar</CustomButton>
+                            <CustomButton>Demo</CustomButton>
+                        </ul>
+                    </div>
+                </div>
+                <div className="col-md-5 image">
+                    <Image />
+                </div>
             </div>
-            {
-                hidden ? null :
-                    <CartDropdown />
-            }
-        </nav>
-    </div>
+        </div>
+    </header>
 );
 
-const mapStateToProps = createStructuredSelector({
-    currentUser: selectCurrentUser,
-    hidden: selectCartHidden
-});
-
-
-export default connect(mapStateToProps)(Header);
+export default Header;

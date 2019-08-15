@@ -1,63 +1,66 @@
-.navbar {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  font-family: 'Poppins', sans-serif;
-  color: #243949;
+header {
+    padding: 150px 50px;
+    color: #243949;
 
-    .logo {
-        height: 60px;
-        margin-left: auto;
+    .title{
+        margin-top: 100px;
+        color: #243949;
+        font-size: 32px;
+        font-weight: bold;
     }
 
-    .options {
-      width: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
+    .parragraph{
+        text-align: justify;
+    }
+
+    .pair-btns-list{
+        margin: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .custom-button{
+        margin-right: 20px;
+    }
+}
+
+
   
-      .option {
-        padding: 10px 25px;
-        color: #243949;
-        cursor: pointer;
-
-        :hover{
-          color: #0072ff;
-          text-decoration-line: none;
-        }
-      }
-    }
-  }
-
-@media (max-width: 1250px) {
-  .navbar {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    
-    .logo {
-      height: 60px;
-      width: auto;
-      margin-left: auto;
-    }
-    .options {
-      width: 100%;
-      display: flex;
-      align-items: left;
-      justify-content: flex-end;
-      font-size: 14px;
-    
-      .option {
-        padding: 5px 10px;
-        cursor: pointer;
+@media (max-width: 900px) {
+    header {
+        padding: 100px 0 20px;
         color: #243949;
 
-        :hover{
-          color: #0072ff;
-          text-decoration-line: none;
+        .row{
+            display: flex;
         }
-      }
-      
+    
+        .title{
+            margin-top: 0px;
+            color: #243949;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    
+        .parragraph{
+            margin: 0px;
+            text-align: justify;
+            font-size: 16px;
+        }
+    
+        .pair-btns-list{
+            display: flex;
+            justify-content: space-around;
+        }
 
-      .icon{
-        margin-right: 0;
-      }
+        .custom-button{
+            margin-right: 20px;
+        }
+
+        .image{
+            width: 100%;
+            height: auto;
+        }
     }
-  }
 }
