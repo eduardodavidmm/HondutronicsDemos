@@ -9,16 +9,16 @@ const Footer = () => (
                     <h4 className="footer-head">Hondutronics</h4>
                     <ul className="footer-links">
                         <li>
-                            <a href="#" title="Link">Paquetes</a>
+                            <a>Paquetes</a>
                         </li>
                         <li>
-                            <a href="#" title="Link">Terminos y Condiciones</a>
+                            <a>Terminos y Condiciones</a>
                         </li>
                         <li>
-                            <a href="#" title="Link">Politica de Privacidad</a>
+                            <a>Politica de Privacidad</a>
                         </li>
                         <li>
-                            <a href="#" title="Link">Contacto</a>
+                            <a>Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -26,10 +26,10 @@ const Footer = () => (
                     <h4 className="footer-head">Empresa</h4>
                     <ul className="footer-links">
                         <li>
-                            <a href="#" title="Link">Sobre Nosotros</a>
+                            <a>Sobre Nosotros</a>
                         </li>
                         <li>
-                            <a href="#" title="Link">Preguntas Frecuentes</a>
+                            <a>Preguntas Frecuentes</a>
                         </li>
                     </ul>
                 </div>
@@ -37,10 +37,10 @@ const Footer = () => (
                     <h4 className="footer-head">Contactanos</h4>
                     <ul className="footer-links">
                         <li>
-                            <a href="#" title="Link">hondutronics.sac@gmail.com</a>
+                            <a title="Link">hondutronics.sac@gmail.com</a>
                         </li>
                         <li>
-                            <a href="#" title="Link">www.hondutronics.com</a>
+                            <a title="Link">www.hondutronics.com</a>
                         </li>
                     </ul>
                     <h4 className="footer-head">Siguenos</h4>
@@ -51,7 +51,7 @@ const Footer = () => (
                             </a>
                         </li>
                         <li className="shate-it-item">
-                            <a href="#" className="btn btn-share-sm bg-twitter">
+                            <a className="btn btn-share-sm bg-twitter">
                                 <i className="fab fa-twitter"></i>
                             </a>
                         </li>

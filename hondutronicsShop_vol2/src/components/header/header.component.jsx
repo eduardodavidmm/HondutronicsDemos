@@ -7,7 +7,7 @@ const Header = () => (
     <header className="header fixed-top-added">
         <div className="container">
             <div className="row">
-                <div className="col-md-7">
+                <div className="col-md-6">
                     <div className="hero-content">
                         <h1 className="title">La casa inteligente a tu alcance</h1>
                         <p className="parragraph mt-3"> La automatización de tu espacio al alcance de tu mano. Ofrecemos paquetes de
@@ -20,7 +20,7 @@ const Header = () => (
                         </ul>
                     </div>
                 </div>
-                <div className="col-md-5 image">
+                <div className="col-md-4 image">
                     <Image />
                 </div>
             </div>
