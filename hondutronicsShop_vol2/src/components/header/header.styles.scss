@@ -7,20 +7,31 @@ header {
         color: #243949;
         font-size: 32px;
         font-weight: bold;
+        opacity: 0;
+        animation: fadeSimple 0.5s ease-in-out 0.5s forwards;
     }
 
     .parragraph{
         text-align: justify;
+        opacity: 0;
+        animation: fadeSimple 1.5s ease-in-out 1.5s forwards;
     }
 
     .pair-btns-list{
         margin: 50px;
         display: flex;
         justify-content: space-around;
+        opacity: 0;
+        animation: fadeSimple 2.5s ease-in-out 2.5s forwards;
     }
 
     .custom-button{
         margin-right: 20px;
+    }
+
+    .image {
+        opacity: 0;
+        animation: fadeSimple 3.5s ease-in-out 3.5s forwards;
     }
 }
 
@@ -46,7 +57,7 @@ header {
         .parragraph{
             margin: 0px;
             text-align: justify;
-            font-size: 16px;
+            font-size: 14px;
         }
     
         .pair-btns-list{
@@ -62,5 +73,16 @@ header {
             width: 100%;
             height: auto;
         }
+    }
+}
+
+
+@keyframes fadeSimple {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
