@@ -23,8 +23,8 @@
     }
 
     .cs-price-card:hover {
-    -webkit-box-shadow: 4px 8px 30px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 4px 8px 30px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 10px 40px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 10px 40px 0px rgba(0, 0, 0, 0.7);
     }
   
   .cs-price-card::after {
@@ -113,17 +113,24 @@
       margin: auto;
 }
   
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .cs-price-card-info {
       padding: 20px;
     }
+
+    .cs-price-card-info h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
     .cs-price-card-content {
       padding: 20px 15px;
     }
+
     .cs-price-card-features {
       margin-bottom: 15px;
     }
     .cs-price-card-features li {
       line-height: 2;
     }
-  }
+}

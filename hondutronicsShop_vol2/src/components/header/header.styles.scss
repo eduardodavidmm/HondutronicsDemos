@@ -1,81 +1,65 @@
 header {
-    padding: 150px 50px;
-    color: #243949;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  
+    header.fixed-top-added {
+    padding-top: 50px;
+    }
+  
+    .hero-content {
+    margin-top: 80px;
+    }
 
     .title{
-        margin-top: 100px;
-        color: #243949;
-        font-size: 32px;
-        font-weight: bold;
-        opacity: 0;
-        animation: fadeSimple 0.5s ease-in-out 0.5s forwards;
+    opacity: 0;
+    animation: fadeSimple 0.5s ease-in-out 0.5s forwards;
     }
-
+    
     .parragraph{
-        text-align: justify;
-        opacity: 0;
-        animation: fadeSimple 1.5s ease-in-out 1.5s forwards;
+    opacity: 0;
+    animation: fadeSimple 1.5s ease-in-out 1.5s forwards;
     }
-
+    
     .pair-btns-list{
-        margin: 50px;
-        display: flex;
-        justify-content: space-around;
-        opacity: 0;
-        animation: fadeSimple 2.5s ease-in-out 2.5s forwards;
+    display: flex;
+    opacity: 0;
+    animation: fadeSimple 2.5s ease-in-out 2.5s forwards;
     }
-
-    .custom-button{
-        margin-right: 20px;
+    
+    .image{
+    opacity: 0;
+    animation: fadeSimple 3.5s ease-in-out 3.5s forwards;    
     }
-
-    .image {
-        opacity: 0;
-        animation: fadeSimple 3.5s ease-in-out 3.5s forwards;
-    }
+  
 }
-
-
   
 @media (max-width: 900px) {
-    header {
-        padding: 100px 0 20px;
-        color: #243949;
+    .header{
+        margin-top: 50px;
 
-        .row{
-            display: flex;
-        }
-    
         .title{
-            margin-top: 0px;
-            color: #243949;
-            font-size: 20px;
-            font-weight: bold;
             text-align: center;
         }
-    
+
         .parragraph{
-            margin: 0px;
-            text-align: justify;
-            font-size: 14px;
+        text-align: center;
         }
     
-        .pair-btns-list{
-            display: flex;
-            justify-content: space-around;
+        .hero-img {
+        margin-top: 100px;
         }
-
-        .custom-button{
-            margin-right: 20px;
-        }
-
-        .image{
-            width: 100%;
-            height: auto;
+    
+        header .hero-content {
+        margin-bottom: 110px;
+        text-align: center;
         }
     }
+  
 }
-
 
 @keyframes fadeSimple {
     from {
@@ -86,3 +70,4 @@ header {
         opacity: 1;
     }
 }
+

@@ -1,27 +1,26 @@
 import React from 'react';
 import CustomButton from '../custom-button/custom-button-component';
-import { ReactComponent as Image } from '../../assets/casa2.svg';
 import './header.styles.scss';
 
 const Header = () => (
-    <header className="header fixed-top-added">
+    <header className="header fixed-top-added" id="hondutronics">
         <div className="container">
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-sm-6 col-md-7">
                     <div className="hero-content">
                         <h1 className="title">La casa inteligente a tu alcance</h1>
                         <p className="parragraph mt-3"> La automatización de tu espacio al alcance de tu mano. Ofrecemos paquetes de
                           servicios personalizados y ajustados
                           a tus gustos y necesidades.
                         </p>
-                        <ul className="pair-btns-list">
-                            <CustomButton>Cotizar</CustomButton>
+                        <div className="pair-btns-list">
+                            <a href="#pricing"><CustomButton>Cotizar</CustomButton></a>
                             <CustomButton>Demo</CustomButton>
-                        </ul>
+                        </div>
                     </div>
                 </div>
-                <div className="col-md-4 image">
-                    <Image />
+                <div class="col-sm-6 col-md-5">
+                    <img src={require('../../assets/casa2.svg')} alt="" class="hero-img img-fluid image" />
                 </div>
             </div>
         </div>

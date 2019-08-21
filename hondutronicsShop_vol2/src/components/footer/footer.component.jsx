@@ -3,22 +3,22 @@ import './footer.styles.scss';
 
 const Footer = () => (
     <footer>
-        <div className="container">
+        <div className="container" id="footer">
             <div className="row">
                 <div className="col-sm-6 col-md-4 col-lg-3">
                     <h4 className="footer-head">Hondutronics</h4>
                     <ul className="footer-links">
                         <li>
-                            <a>Paquetes</a>
+                            <a href="#pricing">Paquetes</a>
                         </li>
                         <li>
-                            <a>Terminos y Condiciones</a>
+                            <a href="#footer">Terminos y Condiciones</a>
                         </li>
                         <li>
-                            <a>Politica de Privacidad</a>
+                            <a href="#footer">Politica de Privacidad</a>
                         </li>
                         <li>
-                            <a>Contacto</a>
+                            <a href="#register">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -26,10 +26,10 @@ const Footer = () => (
                     <h4 className="footer-head">Empresa</h4>
                     <ul className="footer-links">
                         <li>
-                            <a>Sobre Nosotros</a>
+                            <a href="#about">Sobre Nosotros</a>
                         </li>
                         <li>
-                            <a>Preguntas Frecuentes</a>
+                            <a href="#info">Preguntas Frecuentes</a>
                         </li>
                     </ul>
                 </div>
@@ -37,26 +37,26 @@ const Footer = () => (
                     <h4 className="footer-head">Contactanos</h4>
                     <ul className="footer-links">
                         <li>
-                            <a title="Link">hondutronics.sac@gmail.com</a>
+                            <a title="Link" href="#hondutronics">hondutronics.sac@gmail.com</a>
                         </li>
                         <li>
-                            <a title="Link">www.hondutronics.com</a>
+                            <a title="Link" href="#hondutronics">www.hondutronics.com</a>
                         </li>
                     </ul>
                     <h4 className="footer-head">Siguenos</h4>
                     <ul className="footer-share-it">
                         <li className="shate-it-item">
-                            <a target="_blank" href="https://es-la.facebook.com/Hondutronics/" className="btn btn-share-sm bg-facebook">
+                            <a href="https://es-la.facebook.com/Hondutronics/" target="_blank" rel="noopener noreferrer" className="btn btn-share-sm bg-facebook">
                                 <i className="fab fa-facebook"></i>
                             </a>
                         </li>
                         <li className="shate-it-item">
-                            <a className="btn btn-share-sm bg-twitter">
+                            <a href="https://es-la.facebook.com/Hondutronics/" target="_blank" rel="noopener noreferrer" className="btn btn-share-sm bg-twitter">
                                 <i className="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li className="shate-it-item">
-                            <a target="_blank" href="https://www.instagram.com/hondutronics/?hl=es-la" className="btn btn-share-sm bg-instagram">
+                            <a href="https://www.instagram.com/hondutronics/?hl=es-la" target="_blank" rel="noopener noreferrer" className="btn btn-share-sm bg-instagram">
                                 <i className="fab fa-instagram"></i>
                             </a>
                         </li>
