@@ -19,8 +19,8 @@ const Header = () => (
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-5">
-                    <img src={require('../../assets/casa2.svg')} alt="" class="hero-img img-fluid image" />
+                <div className="col-sm-6 col-md-5">
+                    <img src={require('../../assets/casa2.svg')} alt="" className="hero-img img-fluid image" />
                 </div>
             </div>
         </div>

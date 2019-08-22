@@ -16,8 +16,8 @@ const NavBar = ({ currentUser, hidden }) => (
             <Link to="/">
                 <Logo className="navbar-brand logo" />
             </Link>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ml-auto options">
@@ -28,7 +28,7 @@ const NavBar = ({ currentUser, hidden }) => (
                         {currentUser ? (<div className="option" onClick={() => auth.signOut()}>Cerrar Sesión</div>) : (<Link className="option" to="/signin">Iniciar Sesión</Link>)}
                     </li>
                     <li className="nav-item">
-                        <CartIcon class="icon" />
+                        <CartIcon className="icon" />
                     </li>
                 </ul>
             </div>

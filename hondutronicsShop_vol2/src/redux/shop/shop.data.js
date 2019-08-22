@@ -371,7 +371,8 @@ const SHOP_DATA = {
             info: "Una muy versátil opción para diferentes ambientes y gustos. Reemplaza a un bombillo tradicional, diferentes tonos de amarillo, blanco, rojo, verde y azul. Escenas y programación de horarios, con control remoto y agenda de funcionamiento.",
           }
       ]
-    },
+    }
+    /*
     paquetespersonalizados: {
       id: 4,
       title: 'Paquetes Personalizados',
@@ -415,7 +416,7 @@ const SHOP_DATA = {
             price: 5325.00
           }
       ]
-    }
+    }*/
 };
   
 export default SHOP_DATA;
