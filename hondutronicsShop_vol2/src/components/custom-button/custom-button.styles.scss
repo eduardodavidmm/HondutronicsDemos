@@ -7,7 +7,7 @@
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    background-image: linear-gradient(to right,#00c6ff ,#0072ff);
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
     color: white;
     border-radius: 25px;
     border: none;
@@ -15,22 +15,19 @@
     box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.6);
     display: flex;
     justify-content: center;
+    background-size: 300% 100%;
   
     &:hover {
-      background-image: linear-gradient(to right,#0072ff ,#00c6ff);
       border: none;
+      background-position: 100% 0;
+      -moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
     }
-    /*
-    &.google-sign-in {
-      background-image: linear-gradient(to right,#00c6ff ,#0072ff);
-      color: #FFF;
-
-      &:hover {
-        background-image: linear-gradient(to right,#4285F4 ,#34A853,#FBBC05, #EA4335 );
-        color: #FFF;
-      }
+    &:hover:focus{
+      outline: none;
     }
-    */
 
     &.inverted {
       background-image: none;
@@ -57,7 +54,6 @@
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    background-image: linear-gradient(to right,#00c6ff ,#0072ff);
     color: white;
     border-radius: 25px;
     border: none;

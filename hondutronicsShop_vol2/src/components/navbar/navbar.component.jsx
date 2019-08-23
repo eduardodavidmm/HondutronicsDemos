@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../assets/logo.svg'
-import { auth } from '../../firebase/firebase.utils';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
+import { signOutStart } from '../../redux/user/user.actions';
 import './navbar.styles.scss';
 
-const NavBar = ({ currentUser, hidden }) => (
+const NavBar = ({ currentUser, hidden, signOutStart }) => (
     <div className="container">
         <nav className="navbar navbar-expand-sm bg-white navbar-light px-sm-5 fixed-top">
             <Link to="/">
@@ -25,7 +25,7 @@ const NavBar = ({ currentUser, hidden }) => (
                         <Link to="/shop">Tienda</Link>
                     </li>
                     <li className="nav-item option">
-                        {currentUser ? (<div className="option" onClick={() => auth.signOut()}>Cerrar Sesión</div>) : (<Link className="option" to="/signin">Iniciar Sesión</Link>)}
+                        {currentUser ? (<div className="option" onClick={signOutStart}>Cerrar Sesión</div>) : (<Link className="option" to="/signin">Iniciar Sesión</Link>)}
                     </li>
                     <li className="nav-item">
                         <CartIcon className="icon" />
@@ -45,5 +45,8 @@ const mapStateToProps = createStructuredSelector({
     hidden: selectCartHidden
 });
 
+const mapDispatchToProps = dispatch => ({
+    signOutStart: () => dispatch(signOutStart())
+});
 
-export default connect(mapStateToProps)(NavBar);
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
