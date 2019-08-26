@@ -77,14 +77,12 @@ const PriceTables = () => (
                                                 <li>Atención Personalizada</li>
                                             </ul>
                                             <div>
-                                            <CustomButton>Comprar</CustomButton>
+                                                <CustomButton>Comprar</CustomButton>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile-tab2">
                         </div>
                     </div>
                 </div>

@@ -1,11 +1,13 @@
 import React from 'react';
 import CustomButton from '../custom-button/custom-button-component';
+import Bubbles from '../bubbles/bubbles.component';
 import './header.styles.scss';
 
 const Header = () => (
     <header className="header fixed-top-added" id="hondutronics">
         <div className="container">
             <div className="row">
+                <Bubbles />
                 <div className="col-sm-6 col-md-7">
                     <div className="hero-content">
                         <h1 className="title">La casa inteligente a tu alcance</h1>
