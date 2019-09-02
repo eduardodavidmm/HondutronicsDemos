@@ -9,6 +9,7 @@ import PriceTables from '../../components/price-tables/price-tables.component';
 import Partners from '../../components/partners/partners.component';
 import Subscription from '../../components/subscription/subscription.component';
 import './homepage.styles.scss';
+import Slide from 'react-reveal/Slide';
 
 const HomePage = () => (
   <div className='homepage'>
@@ -16,10 +17,16 @@ const HomePage = () => (
     <Pills />
     <Media />
     <Directory />
+    <Slide bottom>
     <Features />
+    </Slide>
+    <Slide bottom>
     <PriceTables/>
+    </Slide>
     <Testimonials />
+    <Slide top>
     <Partners/>
+    </Slide>
     <Subscription/>
   </div>
 );

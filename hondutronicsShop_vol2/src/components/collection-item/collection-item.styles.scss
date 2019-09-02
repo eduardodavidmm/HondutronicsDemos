@@ -3,7 +3,7 @@
     width: 20vw;
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 550px;
     align-items: center;
     position: relative;
     border-radius: 25px;
@@ -22,7 +22,7 @@
       width: 90%;
       opacity: 0.6;
       position: absolute;
-      top: 290px;
+      top: 490px;
     }
 
     .collection-footer {
@@ -39,6 +39,13 @@
     .collection-footer:hover {
       background-image: linear-gradient(to right,#00c6ff 100%,#0072ff 100%,#00c6ff 100%);
       color: #FFF;
+    }
+
+    .info{
+      font-size: 12px;
+      margin: 20px;
+      margin-bottom: 70px;
+      text-align: justify;
     }
 }
 
@@ -84,6 +91,7 @@
       border-top-left-radius: none;
       border-top-right-radius: none;
     }
+
 }
 }
 

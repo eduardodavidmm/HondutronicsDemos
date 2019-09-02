@@ -6,7 +6,7 @@ import './collection-item.styles.scss';
 
 const CollectionItem = ({ item, addItem }) => {
 
-    const { name, price, image } = item;
+    const { name, price, image, info } = item;
 
     return (
     <div className="collection-item">
@@ -15,7 +15,8 @@ const CollectionItem = ({ item, addItem }) => {
                 <span className="price">${price}.00</span>
             </div>
         <div className="image" style={{backgroundImage: `url(${image})`}} />
-            <CustomButton onClick={() => addItem(item)} inverted>Añadir a Carrito</CustomButton>
+        <p className="info">{info}</p>
+        <CustomButton onClick={() => addItem(item)} inverted>Añadir a Carrito</CustomButton>
     </div>
 )};
 
