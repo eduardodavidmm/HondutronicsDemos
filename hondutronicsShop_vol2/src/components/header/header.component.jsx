@@ -1,6 +1,7 @@
 import React from 'react';
 import CustomButton from '../custom-button/custom-button-component';
 import Bubbles from '../bubbles/bubbles.component';
+import { Link } from 'react-router-dom';
 import './header.styles.scss';
 
 const Header = () => (
@@ -17,7 +18,7 @@ const Header = () => (
                         </p>
                         <div className="pair-btns-list">
                             <a href="#pricing"><CustomButton>Cotizar</CustomButton></a>
-                            <CustomButton>Demo</CustomButton>
+                            <CustomButton><Link to="/demo" className="text-white">Demo</Link></CustomButton>
                         </div>
                     </div>
                 </div>

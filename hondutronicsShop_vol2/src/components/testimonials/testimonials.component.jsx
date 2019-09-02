@@ -1,4 +1,6 @@
 import React from 'react';
+import CustomButton from '../custom-button/custom-button-component';
+import { Link } from 'react-router-dom';
 import './testimonials.styles.scss';
 
 const Testimonials = () => (
@@ -24,6 +26,7 @@ const Testimonials = () => (
                     </div>
                 </div>
             </div>
+            <CustomButton><Link to="/aboutus" className="text-white">Sobre Nosotros</Link></CustomButton>
         </section>
     </div>
 );
