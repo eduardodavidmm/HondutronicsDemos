@@ -15,7 +15,9 @@ const HomePage = () => (
   <div className='homepage'>
     <Header />
     <Pills />
+    <Slide top>
     <Media />
+    </Slide>
     <Directory />
     <Slide bottom>
     <Features />

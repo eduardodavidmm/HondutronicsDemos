@@ -2,12 +2,14 @@ import React from 'react';
 import Bubbles from '../../components/bubbles/bubbles.component';
 import Switch from '../../components/toggle-switch/toggle-switch.component';
 import './demo.styles.scss';
+import Zoom from 'react-reveal/Zoom';
 
 const Demo = () => (
     <div className="container demo">
         <Bubbles></Bubbles>
         <h1 className="title">Demo</h1>
         <p>Consulta datos reales de nuestros productos comparados a productos convencionales</p>
+        <Zoom>
         <div className="row">
             <div className="col-md-6">
                 <h3>Smart</h3>
@@ -56,6 +58,7 @@ const Demo = () => (
                 </div>
             </div>
         </div>
+        </Zoom>
     </div>
 );
 
