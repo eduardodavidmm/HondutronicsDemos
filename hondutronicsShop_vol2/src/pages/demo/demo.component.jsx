@@ -21,15 +21,10 @@ const Demo = () => (
                 <div className="card">
                     <i className="fas fa-plug fa-5x iconsmart"></i>
                     <Switch/>
-                    <p>data</p>
+                    <p className="info">data</p>
                 </div>
                 <div className="card">
                     <i className="fas fa-power-off fa-5x iconsmart"></i>
-                    <Switch/>
-                    <p>data</p>
-                </div>
-                <div className="card">
-                    <i className="fas fa-bullseye fa-5x iconsmart"></i>
                     <Switch/>
                     <p>data</p>
                 </div>
@@ -48,11 +43,6 @@ const Demo = () => (
                 </div>
                 <div className="card">
                     <i className="fas fa-power-off fa-5x iconconv"></i>
-                    <Switch/>
-                    <p>data</p>
-                </div>
-                <div className="card">
-                    <i className="fas fa-bullseye fa-5x iconconv"></i>
                     <Switch/>
                     <p>data</p>
                 </div>
